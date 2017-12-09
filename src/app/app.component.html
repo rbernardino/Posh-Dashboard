@@ -1,0 +1,7 @@
+<button class="btn btn-default" (click)="getDirectoryUsage()">Get-Directory Usage</button>
+
+<div *ngIf="directoryUsage">
+  <h2>Directory Summary for {{ directoryUsage.RootDirectory }} </h2>
+  <li>Total Files: {{ directoryUsage.FilesCount }}</li>
+  <li>Total Usage (MB): {{ directoryUsage.TotalUsage | number }}</li>
+</div>
